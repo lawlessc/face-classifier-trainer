@@ -1,0 +1,5 @@
+#!/bin/sh
+g++ -o main   main.cpp `pkg-config gtk+-2.0 opencv --cflags --libs`
+g++ -o trainer   trainerGui.cpp `pkg-config gtk+-2.0 opencv --cflags --libs`
+g++ -o monl   monitor_loader.cpp `pkg-config gtk+-2.0 opencv --cflags --libs`
+g++ -o mon   test_net_mon.cpp `pkg-config gtk+-2.0 opencv --cflags --libs`   
